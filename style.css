@@ -1,0 +1,155 @@
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252238;
+    background: #f5f3f8;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.site-header {
+    background: #500767;
+    color: white;
+    padding: 28px 0;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.site-header p {
+    margin: 4px 0 0;
+}
+
+.panel {
+    background: white;
+    margin: 24px 0;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgb(40 20 50 / 7%);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    background: #500767;
+    color: white;
+    border: 0;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #70258a;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9c3d0;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+small {
+    color: #625a6a;
+}
+
+.status {
+    padding: 10px;
+    border-radius: 6px;
+    background: #f0edf3;
+}
+
+.status.success {
+    color: #176534;
+    background: #e6f6eb;
+}
+
+.status.error {
+    color: #a51d2d;
+    background: #fdebed;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note-item {
+    border: 1px solid #e3dce9;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.note-item h3 {
+    margin-top: 0;
+}
+
+.note-item p {
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background: #b42332;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background: #8e1926;
+}
+
+.site-footer {
+    padding: 18px;
+    text-align: center;
+    color: #625a6a;
+}
+
+@media (max-width: 600px) {
+    .panel {
+        padding: 17px;
+    }
+
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+}
